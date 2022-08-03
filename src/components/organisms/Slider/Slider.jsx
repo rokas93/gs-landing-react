@@ -7,8 +7,12 @@ import {
   SliderPointersWrapperStyled,
   SliderStyled,
 } from './Slider.styled';
+import useViewport from '../../../hooks/useViewport';
+import brakepoints from '../../../utils/brakepoints';
 
 const Slider = () => {
+  const { width } = useViewport();
+
   return (
     <SliderStyled>
       <SliderHeadingStyled>
@@ -19,11 +23,13 @@ const Slider = () => {
         geriausių.
       </SliderParagraphStyled>
       <Button text={'Skaityti toliau'} url={'http://google.lt'} />
-      <SliderPointersWrapperStyled>
-        <SliderPointerStyled isActive />
-        <SliderPointerStyled />
-        <SliderPointerStyled />
-      </SliderPointersWrapperStyled>
+      {width > brakepoints.md && (
+        <SliderPointersWrapperStyled>
+          <SliderPointerStyled isActive />
+          <SliderPointerStyled />
+          <SliderPointerStyled />
+        </SliderPointersWrapperStyled>
+      )}
     </SliderStyled>
   );
 };

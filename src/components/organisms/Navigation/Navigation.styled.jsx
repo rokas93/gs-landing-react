@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import brakepoints from '../../../utils/brakepoints';
 
 export const NavigationWrapperStyled = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ export const NavigationWrapperStyled = styled.div`
   max-width: 1280px;
   width: 100%;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     padding: 35px 15px;
   }
 `;
@@ -22,7 +23,7 @@ export const NavigationStyled = styled.nav`
   justify-content: center;
   width: 100%;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     & {
       display: block;
       width: auto;
@@ -37,7 +38,7 @@ export const NavigationListStyled = styled.ul`
   gap: 32px;
   list-style: none;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     & {
       flex-direction: row;
     }
@@ -60,7 +61,7 @@ export const NavigationButtonStyled = styled.button`
   background-color: transparent;
   font-size: 1.5rem;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     & {
       display: none;
     }

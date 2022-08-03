@@ -1,14 +1,15 @@
 import styled from 'styled-components';
+import brakepoints from '../../../utils/brakepoints';
 
 export const SliderStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 100px 0;
+  padding: 90px 0;
   width: 100%;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     width: 50%;
     align-items: flex-start;
   }
@@ -20,7 +21,7 @@ export const SliderHeadingStyled = styled.h1`
   letter-spacing: 1.44px;
   text-align: center;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     text-align: left;
   }
 `;
@@ -33,7 +34,7 @@ export const SliderParagraphStyled = styled.p`
   letter-spacing: 0.88px;
   text-align: center;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: ${brakepoints.md}px) {
     text-align: left;
   }
 `;
@@ -42,7 +43,6 @@ export const SliderPointersWrapperStyled = styled.div`
   display: flex;
   gap: 10px;
   margin-top: 50px;
-  margin-bottom: 90px;
 `;
 
 export const SliderPointerStyled = styled.div`
