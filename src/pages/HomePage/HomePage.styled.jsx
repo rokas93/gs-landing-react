@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import brakepoints from '../../utils/brakepoints';
+import brakepoints from '../../shared/constants/brakepoints';
 
 export const HomePageStyled = styled.div`
   overflow: hidden;
@@ -38,8 +38,12 @@ export const FaqContainerStyled = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   @media screen and (min-width: ${brakepoints.md}px) {
     padding: 0 15px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 `;

@@ -1,7 +1,7 @@
-import dcLogo from '../assets/images/dc-logo.svg';
-import fbLogo from '../assets/images/fb-logo.svg';
-import sampLogo from '../assets/images/samp-logo.svg';
-// import ytLogo from '../assets/images/yt-logo.svg';
+import dcLogo from '../../assets/icons/dc-logo.svg';
+import fbLogo from '../../assets/icons/fb-logo.svg';
+import sampLogo from '../../assets/icons/samp-logo.svg';
+// import ytLogo from '../../assets/icons/yt-logo.svg';
 import { uid } from 'uid';
 
 const mediaLinks = [

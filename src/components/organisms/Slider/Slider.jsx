@@ -8,7 +8,7 @@ import {
   SliderStyled,
 } from './Slider.styled';
 import useViewport from '../../../hooks/useViewport';
-import brakepoints from '../../../utils/brakepoints';
+import brakepoints from '../../../shared/constants/brakepoints';
 
 const Slider = () => {
   const { width } = useViewport();

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import brakepoints from '../../../utils/brakepoints';
+import brakepoints from '../../../shared/constants/brakepoints';
 
 export const NavigationWrapperStyled = styled.div`
   display: flex;
