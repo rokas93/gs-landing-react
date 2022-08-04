@@ -45,10 +45,11 @@ export const MonitorColorBledStyled = styled.div`
 export const MonitorContentStyled = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   position: relative;
 
   @media screen and (min-width: ${brakepoints.md}px) {
+    gap: 120px;
     flex-direction: row;
   }
 `;

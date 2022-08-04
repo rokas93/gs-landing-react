@@ -57,6 +57,8 @@ export const FaqCardPointerStyled = styled.div`
   padding: 8px;
 
   & svg {
+    color: #3d3c45;
+
     ${({ isActive }) =>
       isActive &&
       css`

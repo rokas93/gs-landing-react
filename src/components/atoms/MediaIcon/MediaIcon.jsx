@@ -3,9 +3,8 @@ import { MediaIconStyled } from './MediaIcon.styled';
 
 const MediaIcon = ({ link }) => {
   return (
-    <MediaIconStyled href={link.url}>
+    <MediaIconStyled href={link.url} target='_blank'>
       <img src={link.icon} alt={link.text} />
-      {console.log(link)}
     </MediaIconStyled>
   );
 };

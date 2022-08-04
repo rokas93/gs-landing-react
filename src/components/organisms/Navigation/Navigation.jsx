@@ -9,7 +9,7 @@ import {
   NavigationWrapperStyled,
 } from './Navigation.styled';
 // -- Other
-import { ReactComponent as Logo } from '../../../assets/icons/logo.svg';
+import { ReactComponent as Logo } from '../../../assets/icons/gs-icon.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { navLinks } from '../../../shared/constants/navLinks';
 

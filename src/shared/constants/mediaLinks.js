@@ -1,21 +1,26 @@
-import dcLogo from '../../assets/icons/dc-logo.svg';
-import fbLogo from '../../assets/icons/fb-logo.svg';
-import sampLogo from '../../assets/icons/samp-logo.svg';
-// import ytLogo from '../../assets/icons/yt-logo.svg';
+import dcIcon from '../../assets/icons/dc-icon.svg';
+import fbIcon from '../../assets/icons/fb-icon.svg';
+import sampIcon from '../../assets/icons/samp-icon.svg';
+// import ytIcon from '../../assets/icons/yt-icon.svg';
 import { uid } from 'uid';
 
 const mediaLinks = [
-  { id: uid(), icon: sampLogo, url: 'http://localhost:3000/samp', text: '' },
   {
     id: uid(),
-    icon: fbLogo,
-    url: 'http://localhost:3000/fb',
+    icon: sampIcon,
+    url: 'https://files.sa-mp.com/sa-mp-0.3.7-R4-2-install.exe',
+    text: '',
+  },
+  {
+    id: uid(),
+    icon: fbIcon,
+    url: 'https://www.facebook.com/greenside.lt',
     text: 'Facebook puslapis',
   },
   {
     id: uid(),
-    icon: dcLogo,
-    url: 'http://localhost:3000/dc',
+    icon: dcIcon,
+    url: 'https://discord.gg/PGxrkTEyFS',
     text: 'Discord serveris',
   },
 ];
