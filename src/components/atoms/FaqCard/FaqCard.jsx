@@ -1,18 +1,21 @@
-import React from 'react';
 import {
   FaqCardBodyStyled,
   FaqCardHeadStyled,
+  FaqCardPointerStyled,
   FaqCardStyled,
 } from './FaqCard.styled';
+import { ReactComponent as Pointer } from '../../../assets/icons/pointer-icon.svg';
 
-const FaqCard = ({ text }) => {
+const FaqCard = ({ text, isActive, handleSelect }) => {
   return (
-    <FaqCardStyled>
-      <FaqCardHeadStyled>
+    <FaqCardStyled isActive={isActive} onClick={() => handleSelect(text.id)}>
+      <FaqCardHeadStyled isActive={isActive}>
         <p>{text.question}</p>
-        <div></div>
+        <FaqCardPointerStyled isActive={isActive}>
+          <Pointer />
+        </FaqCardPointerStyled>
       </FaqCardHeadStyled>
-      <FaqCardBodyStyled>{text.answer}</FaqCardBodyStyled>
+      {isActive && <FaqCardBodyStyled>{text.answer}</FaqCardBodyStyled>}
     </FaqCardStyled>
   );
 };
