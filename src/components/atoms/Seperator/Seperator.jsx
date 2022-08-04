@@ -1,8 +1,17 @@
 import React from 'react';
-import { SeperatorStyled } from './Seperator.styled';
+import {
+  SeperatorElementStyled,
+  SeperatorHeadingStyled,
+  SeperatorStyled,
+} from './Seperator.styled';
 
-const Seperator = () => {
-  return <SeperatorStyled>Seperator</SeperatorStyled>;
+const Seperator = ({ text }) => {
+  return (
+    <SeperatorStyled>
+      <SeperatorElementStyled />
+      <SeperatorHeadingStyled>{text}</SeperatorHeadingStyled>
+    </SeperatorStyled>
+  );
 };
 
 export default Seperator;

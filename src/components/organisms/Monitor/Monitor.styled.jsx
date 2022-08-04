@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import bg from '../../../assets/images/monitor-bg.jpg';
-import brakepoints from '../../../utils/brakepoints';
+import brakepoints from '../../../shared/constants/brakepoints';
 
 export const MonitorStyled = styled.div`
   background-image: url(${bg});

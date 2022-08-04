@@ -12,9 +12,9 @@ import {
   MonitorIconsWrapperStyled,
 } from './Monitor.styled';
 import useViewport from '../../../hooks/useViewport';
-import brakepoints from '../../../utils/brakepoints';
+import brakepoints from '../../../shared/constants/brakepoints';
 import monitorElement from '../../../assets/images/monitor-element.png';
-import mediaLinks from '../../../utils/mediaLinks';
+import mediaLinks from '../../../shared/constants/mediaLinks';
 import MediaIcon from '../../atoms/MediaIcon/MediaIcon';
 
 const Monitor = () => {
