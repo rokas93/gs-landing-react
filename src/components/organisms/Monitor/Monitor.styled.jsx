@@ -43,31 +43,26 @@ export const MonitorColorBledStyled = styled.div`
 `;
 
 export const MonitorContentStyled = styled.div`
-  position: relative;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.88px;
-
-  & span {
-    color: #9dcc94;
-    font-weight: 600;
-  }
+  gap: 50px;
+  position: relative;
 
   @media screen and (min-width: ${brakepoints.md}px) {
-    align-items: flex-start;
+    flex-direction: row;
   }
 `;
+
+export const MonitorInfoWrapperStyled = styled.div``;
 
 export const MonitorInfoStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  color: #ccc;
+  font-weight: 300;
+  letter-spacing: 0.88px;
 
   margin-top: 22px;
 
@@ -77,6 +72,11 @@ export const MonitorInfoStyled = styled.div`
     @media screen and (min-width: ${brakepoints.md}px) {
       text-align: left;
     }
+  }
+
+  & span {
+    color: #9dcc94;
+    font-weight: 600;
   }
 
   @media screen and (min-width: ${brakepoints.md}px) {
@@ -99,12 +99,23 @@ export const MonitorHeadingStyled = styled.h2`
 export const MonitorElementStyled = styled.div`
   position: absolute;
   bottom: -15%;
-  left: 10%;
+  right: -10%;
 
   width: 100%;
 
   & img {
     width: 1200px;
-    height: auto;
+  }
+`;
+
+export const MonitorIconsWrapperStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: row;
+
+  @media screen and (min-width: ${brakepoints.md}px) {
+    flex-direction: column;
+    gap: 15px;
   }
 `;

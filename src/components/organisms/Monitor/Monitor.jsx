@@ -8,10 +8,14 @@ import {
   MonitorInfoStyled,
   MonitorColorBledStyled,
   MonitorElementStyled,
+  MonitorInfoWrapperStyled,
+  MonitorIconsWrapperStyled,
 } from './Monitor.styled';
 import useViewport from '../../../hooks/useViewport';
 import brakepoints from '../../../utils/brakepoints';
 import monitorElement from '../../../assets/images/monitor-element.png';
+import mediaLinks from '../../../utils/mediaLinks';
+import MediaIcon from '../../atoms/MediaIcon/MediaIcon';
 
 const Monitor = () => {
   const { width } = useViewport();
@@ -27,14 +31,21 @@ const Monitor = () => {
       )}
 
       <MonitorContentStyled>
-        <MonitorHeadingStyled>SA-MP serveris</MonitorHeadingStyled>
-        <MonitorInfoStyled>
-          <p>Serverio IP: samp.greenside.lt</p>
-          <p>
-            Serverio žaidėjai: <span>104/300</span>
-          </p>
-        </MonitorInfoStyled>
-        {width > brakepoints.md && <Button text={'Jungtis į serverį'} />}
+        <MonitorInfoWrapperStyled>
+          <MonitorHeadingStyled>SA-MP serveris</MonitorHeadingStyled>
+          <MonitorInfoStyled>
+            <p>Serverio IP: samp.greenside.lt</p>
+            <p>
+              Serverio žaidėjai: <span>104/300</span>
+            </p>
+          </MonitorInfoStyled>
+          {width > brakepoints.md && <Button text={'Jungtis į serverį'} />}
+        </MonitorInfoWrapperStyled>
+        <MonitorIconsWrapperStyled>
+          {width > brakepoints.md && <MediaIcon link={mediaLinks[0]} />}
+          <MediaIcon link={mediaLinks[1]} />
+          <MediaIcon link={mediaLinks[2]} />
+        </MonitorIconsWrapperStyled>
       </MonitorContentStyled>
     </MonitorStyled>
   );

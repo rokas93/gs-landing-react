@@ -1,8 +1,10 @@
 import React from 'react';
+import Faq from '../../components/organisms/Faq/Faq';
 import Monitor from '../../components/organisms/Monitor/Monitor';
 import Navigation from '../../components/organisms/Navigation/Navigation';
 import Slider from '../../components/organisms/Slider/Slider';
 import {
+  FaqContainerStyled,
   HomePageStyled,
   MonitorContainerStyled,
   NavigationContainerStyled,
@@ -21,6 +23,9 @@ const HomePage = () => {
       <MonitorContainerStyled>
         <Monitor />
       </MonitorContainerStyled>
+      <FaqContainerStyled>
+        <Faq />
+      </FaqContainerStyled>
     </HomePageStyled>
   );
 };

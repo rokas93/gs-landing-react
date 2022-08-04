@@ -26,9 +26,20 @@ export const MonitorContainerStyled = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 0 20px 0;
+  width: 100%;
 
   @media screen and (min-width: ${brakepoints.md}px) {
     padding-left: 15px;
     padding: 0 15px 20px 15px;
+  }
+`;
+
+export const FaqContainerStyled = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media screen and (min-width: ${brakepoints.md}px) {
+    padding: 0 15px;
   }
 `;
