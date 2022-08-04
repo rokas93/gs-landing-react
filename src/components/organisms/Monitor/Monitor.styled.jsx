@@ -4,13 +4,15 @@ import brakepoints from '../../../utils/brakepoints';
 
 export const MonitorStyled = styled.div`
   background-image: url(${bg});
-  background-position: 80% 85%;
+  background-repeat: no-repeat;
+  background-position: 0% 85%;
+  background-size: cover;
   padding: 70px 30px;
 
   position: relative;
 
   @media screen and (min-width: ${brakepoints.md}px) {
-    margin-right: -100%;
+    margin-right: -50vmax;
     padding: 70px;
   }
 `;
