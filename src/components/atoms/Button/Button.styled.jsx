@@ -31,12 +31,9 @@ export const ButtonStyled = styled.a`
     css`
       color: #3d3c45;
 
-      background: #fff;
+      background-color: #fff;
+      box-shadow: 0px 6px 14px #00000020;
 
       padding: 10px 20px;
-
-      &:hover {
-        background: #ccc;
-      }
     `}
 `;

@@ -6,7 +6,7 @@ export const NewsStyled = styled.div`
   grid-template-columns: auto;
   grid-template-rows: auto;
 
-  @media screen and (min-width: ${brakepoints.md}px) {
+  @media screen and (min-width: ${brakepoints.lg}px) {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, auto);
   }
@@ -21,6 +21,10 @@ export const NewsHeaderStyled = styled.div`
   padding-bottom: 50px;
 
   @media screen and (min-width: ${brakepoints.md}px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: ${brakepoints.lg}px) {
     grid-column-start: 2;
     justify-content: space-between;
   }
@@ -40,7 +44,7 @@ export const NewsLeftWrapperStyled = styled.div`
 
 export const NewsParallelogramStyled = styled.div`
   width: 400px;
-  height: 578px;
+  height: auto;
 
   transform: skew(-5deg);
   background: linear-gradient(
@@ -61,4 +65,15 @@ export const NewsParallelogramElementStyled = styled.img`
   top: -10%;
   left: -50%;
   transform: skew(5deg);
+`;
+
+export const NewsRightWrapperStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media screen and (min-width: ${brakepoints.md}px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;

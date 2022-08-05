@@ -24,7 +24,7 @@ const Monitor = () => {
     <MonitorStyled>
       <MonitorBlurStyled />
       <MonitorColorBledStyled />
-      {width > brakepoints.md && (
+      {width > brakepoints.lg && (
         <MonitorElementStyled>
           <img src={monitorElement} alt='asd' />
         </MonitorElementStyled>

@@ -49,8 +49,7 @@ export const SliderPointerStyled = styled.div`
   width: 12px;
   height: 12px;
 
-  background: ${({ isActive }) => (isActive ? '#3d3c45' : '#3D3C4533')} 0% 0%
-    no-repeat padding-box;
+  background-color: ${({ isActive }) => (isActive ? '#3d3c45' : '#B1B1B4')};
   box-shadow: 0px 6px 14px #9dcc9442;
   border-radius: 2px;
 
