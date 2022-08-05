@@ -22,7 +22,11 @@ const Slider = () => {
         Esame be galo laimingi šiais metais, nes projektui šie metai buvo vieni
         geriausių.
       </SliderParagraphStyled>
-      <Button text={'Skaityti toliau'} url={'http://google.lt'} />
+      <Button
+        text={'Skaityti toliau'}
+        url={'http://google.lt'}
+        type={'primary'}
+      />
       {width > brakepoints.md && (
         <SliderPointersWrapperStyled>
           <SliderPointerStyled isActive />

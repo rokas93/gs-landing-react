@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 import brakepoints from '../../shared/constants/brakepoints';
+import mainBg from '../../assets/images/main-bg.jpg';
 
 export const HomePageStyled = styled.div`
+  background-color: #f7f7f7;
+  background-image: url(${mainBg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   overflow: hidden;
 `;
 
@@ -44,6 +51,18 @@ export const FaqContainerStyled = styled.div`
   @media screen and (min-width: ${brakepoints.md}px) {
     padding: 0 15px;
     padding-top: 150px;
+    padding-bottom: 150px;
+  }
+`;
+
+export const NewsContainerStyled = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: ${brakepoints.md}px) {
+    padding: 0 15px;
     padding-bottom: 150px;
   }
 `;

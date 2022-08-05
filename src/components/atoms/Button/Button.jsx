@@ -1,8 +1,12 @@
 import React from 'react';
 import { ButtonStyled } from './Button.styled';
 
-const Button = ({ text, url }) => {
-  return <ButtonStyled href={url}>{text}</ButtonStyled>;
+const Button = ({ text, url, type }) => {
+  return (
+    <ButtonStyled href={url} type={type}>
+      {text}
+    </ButtonStyled>
+  );
 };
 
 export default Button;

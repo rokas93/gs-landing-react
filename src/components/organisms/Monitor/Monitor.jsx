@@ -24,7 +24,7 @@ const Monitor = () => {
     <MonitorStyled>
       <MonitorBlurStyled />
       <MonitorColorBledStyled />
-      {width > brakepoints.md && (
+      {width > brakepoints.lg && (
         <MonitorElementStyled>
           <img src={monitorElement} alt='asd' />
         </MonitorElementStyled>
@@ -39,7 +39,9 @@ const Monitor = () => {
               Serverio žaidėjai: <span>104/300</span>
             </p>
           </MonitorInfoStyled>
-          {width > brakepoints.md && <Button text={'Jungtis į serverį'} />}
+          {width > brakepoints.md && (
+            <Button text={'Jungtis į serverį'} type={'primary'} />
+          )}
         </MonitorInfoWrapperStyled>
         <MonitorIconsWrapperStyled>
           {width > brakepoints.md && <MediaIcon link={mediaLinks[0]} />}

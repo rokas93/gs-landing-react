@@ -3,7 +3,7 @@ import {
   SeperatorElementStyled,
   SeperatorHeadingStyled,
   SeperatorStyled,
-} from './Seperator.styled';
+} from './Separator.styled';
 
 const Seperator = ({ text }) => {
   return (
