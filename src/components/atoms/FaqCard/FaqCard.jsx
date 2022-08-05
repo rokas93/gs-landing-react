@@ -8,8 +8,11 @@ import { ReactComponent as Pointer } from '../../../assets/icons/pointer-icon.sv
 
 const FaqCard = ({ text, isActive, handleSelect }, ref) => {
   return (
-    <FaqCardStyled isActive={isActive} onClick={() => handleSelect(text.id)}>
-      <FaqCardHeadStyled isActive={isActive}>
+    <FaqCardStyled isActive={isActive}>
+      <FaqCardHeadStyled
+        isActive={isActive}
+        onClick={() => handleSelect(text.id)}
+      >
         <p>{text.question}</p>
         <FaqCardPointerStyled isActive={isActive}>
           <Pointer />

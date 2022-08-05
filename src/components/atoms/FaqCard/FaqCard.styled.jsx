@@ -11,8 +11,6 @@ export const FaqCardStyled = styled.div`
 
   background-color: #fff;
 
-  cursor: pointer;
-
   @media screen and (min-width: ${brakepoints.md}px) {
     width: ${({ isActive }) => (isActive ? '100%' : 'calc((100% - 20px) / 2)')};
   }
@@ -27,6 +25,8 @@ export const FaqCardHeadStyled = styled.div`
 
   color: #3d3c45;
   letter-spacing: 0.88px;
+
+  cursor: pointer;
 
   ${({ isActive }) =>
     isActive &&

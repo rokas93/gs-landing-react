@@ -47,3 +47,15 @@ export const FaqContainerStyled = styled.div`
     padding-bottom: 150px;
   }
 `;
+
+export const NewsContainerStyled = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: ${brakepoints.md}px) {
+    padding: 0 15px;
+    padding-bottom: 150px;
+  }
+`;

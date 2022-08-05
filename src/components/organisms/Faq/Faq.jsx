@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import FaqCard from '../../atoms/FaqCard/FaqCard';
-import Seperator from '../../atoms/Seperator/Seperator';
+import Separator from '../../atoms/Separator/Separator';
 import { FaqContentWrapperStyled, FaqStyled } from './Faq.styled';
 import FAQ_TEXTS from '../../../shared/texts/faqTexts';
 
@@ -14,7 +14,7 @@ const Faq = () => {
 
   return (
     <FaqStyled>
-      <Seperator text={'Dažniausiai užduodami klausimai'} />
+      <Separator text={'Dažniausiai užduodami klausimai'} />
       <FaqContentWrapperStyled>
         {FAQ_TEXTS.map((text) => (
           <FaqCard
