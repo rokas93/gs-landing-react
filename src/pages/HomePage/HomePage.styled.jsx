@@ -3,12 +3,13 @@ import brakepoints from '../../shared/constants/brakepoints';
 import mainBg from '../../assets/images/main-bg.jpg';
 
 export const HomePageStyled = styled.div`
-  overflow: hidden;
   background-color: #f7f7f7;
   background-image: url(${mainBg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+
+  overflow: hidden;
 `;
 
 export const NavigationContainerStyled = styled.div`
