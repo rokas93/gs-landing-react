@@ -1,0 +1,35 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  width='137'
+  height='24'
+  viewBox='0 0 137 24'
+>
+  <g id='Group_226' data-name='Group 226' transform='translate(0.001)'>
+    <path
+      id='Intersection_1'
+      data-name='Intersection 1'
+      d='M15.142,85.99v6.03H0V85.986l7.57-7.57Z'
+      transform='translate(0 -68.021)'
+      fill='#3d3c45'
+    />
+    <path
+      id='Path_127'
+      data-name='Path 127'
+      d='M0,0H15.145L0,15.143Z'
+      transform='translate(-0.003)'
+      fill='#9dcc94'
+    />
+    <text
+      id='pavadinimas'
+      transform='translate(23.999 18)'
+      fill="currentColor"
+      font-size='20'
+      font-family='Arial-BoldMT, Arial'
+      font-weight='700'
+    >
+      <tspan x='0' y='0'>
+        greenside.lt
+      </tspan>
+    </text>
+  </g>
+</svg>
