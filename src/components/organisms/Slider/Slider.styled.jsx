@@ -26,6 +26,10 @@ export const SliderHeadingStyled = styled.h1`
   }
 `;
 
+export const SliderContentWrapperStyled = styled.div`
+  width: 100%;
+`;
+
 export const SliderParagraphStyled = styled.p`
   margin-top: 20px;
   margin-bottom: 50px;
