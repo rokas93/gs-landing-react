@@ -7,9 +7,11 @@ export const FaqStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px 0;
 
   @media screen and (min-width: ${brakepoints.md}px) {
     gap: 50px;
+    padding: 150px 0;
   }
 `;
 

@@ -22,7 +22,7 @@
     <text
       id='pavadinimas'
       transform='translate(23.999 18)'
-      fill='#3d3c45'
+      fill="currentColor"
       font-size='20'
       font-family='Arial-BoldMT, Arial'
       font-weight='700'

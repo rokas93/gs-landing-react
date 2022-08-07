@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const ButtonStyled = styled.a`
-  /* display: inline-block; */
+  display: inline-block;
 
   border-radius: 5px;
 
