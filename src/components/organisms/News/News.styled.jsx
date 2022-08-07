@@ -3,12 +3,11 @@ import brakepoints from '../../../shared/constants/brakepoints';
 
 export const NewsStyled = styled.div`
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  padding-bottom: 50px;
 
   @media screen and (min-width: ${brakepoints.lg}px) {
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, auto);
+    padding-bottom: 150px;
   }
 `;
 
