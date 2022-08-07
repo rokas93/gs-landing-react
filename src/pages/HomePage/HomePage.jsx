@@ -1,11 +1,13 @@
 import React from 'react';
 import Faq from '../../components/organisms/Faq/Faq';
+import Footer from '../../components/organisms/Footer/Footer';
 import Monitor from '../../components/organisms/Monitor/Monitor';
 import Navigation from '../../components/organisms/Navigation/Navigation';
 import News from '../../components/organisms/News/News';
 import Slider from '../../components/organisms/Slider/Slider';
 import {
   FaqContainerStyled,
+  FooterContainerStyled,
   HomePageStyled,
   MonitorContainerStyled,
   NavigationContainerStyled,
@@ -31,6 +33,9 @@ const HomePage = () => {
       <NewsContainerStyled>
         <News />
       </NewsContainerStyled>
+      <FooterContainerStyled>
+        <Footer />
+      </FooterContainerStyled>
     </HomePageStyled>
   );
 };
