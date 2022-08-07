@@ -27,6 +27,10 @@ export const MediaButtonTextStyled = styled.span`
 `;
 
 export const MediaButtonIconStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 15px;
   background-color: ${({ color }) => color};
 
